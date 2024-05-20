@@ -1,7 +1,8 @@
-# 모두가 모이는 뱅킹, 모모뱅크
 <p align="center">
-  <img src="https://lab.ssafy.com/s10-fintech-finance-sub2/S10P22A505/-/raw/develop/README/Untitled.png?ref_type=heads" alt="Untitled">
+  <img src="/README/main.png" alt="main logo">
 </p>
+
+<br>
 
 ## 개요
 
@@ -10,8 +11,6 @@
 프로젝트 기간(6주): 2024.02.26 ~ 2024.04.05
 
 팀원(6명): 손준성(Back-Infra), 곽민우(Back-Infra), 명소이(Back-Api), 이효리(Back-api), 김성수(front), 엄세현(front)
-
-호스팅 url: [https://j10a505.p.ssafy.io/](https://j10a505.p.ssafy.io/)
 
 ## 소개
 
@@ -49,7 +48,9 @@
 
 ## 시스템 구성도
 
-![Untitled](https://lab.ssafy.com/s10-fintech-finance-sub2/S10P22A505/-/raw/develop/README/Untitled%201.png?ref_type=heads)
+<p align="center">
+  <img src="/README/structure.png" alt="structure">
+</p>
 
 ```jsx
 [ 클라이언트 ]
@@ -73,8 +74,6 @@
                      └─> [ 계좌 관리 & 거래 처리 ]
 ```
 
----
-
 ## 환경 상세
 
 ### IDE
@@ -97,7 +96,10 @@
 ### Frontend
 
 - Nuxt.js 3.10.3
+- Sass
 - Tailwind CSS 6.11.4
+- Axios
+- Pinia
 
 ### Backend
 
@@ -122,12 +124,194 @@ MSA구조로 다음과같이 세 개의 ERD가 존재합니다.
 
 - **User**: MariaDB
 
-  ![Untitled](https://lab.ssafy.com/s10-fintech-finance-sub2/S10P22A505/-/raw/develop/README/Untitled%202.png?ref_type=heads)
+<p align="center">
+  <img src="/README/erd1.png" alt="erd1">
+</p>
 
 - **Bank**: Oracle DB
 
-![Untitled](https://lab.ssafy.com/s10-fintech-finance-sub2/S10P22A505/-/raw/develop/README/Untitled%203.png?ref_type=heads)
+<p align="center">
+  <img src="/README/erd2.png" alt="erd2">
+</p>
 
 - **Community**: MariaDB
 
-![Untitled](https://lab.ssafy.com/s10-fintech-finance-sub2/S10P22A505/-/raw/develop/README/Untitled%204.png?ref_type=heads)
+<p align="center">
+  <img src="/README/erd3.png" alt="erd3">
+</p>
+
+<a name="intro"></a>
+
+## 📢 　 Site Layout
+
+- 초기화면
+
+  <img src="./README/layout/main.gif" width="200" height="400">
+   <img src="./README/layout/main.PNG" width="200" height="400">
+
+- 회원가입
+
+  <img src="./README/layout/signup1.PNG" width="200" height="400">
+  <img src="./README/layout/signup2.PNG" width="200" height="400">
+  <img src="./README/layout/signup3.PNG" width="200" height="400">
+  <img src="./README/layout/signup4.PNG" width="200" height="400">
+
+- 뱅킹 메인
+
+  <img src="./README/layout/bank_main.PNG" width="200" height="400">
+
+- 계좌 목록
+
+  <img src="./README/layout/bank_list.PNG" width="200" height="400">
+
+- 모임 목록
+
+  <img src="./README/layout/group_list.PNG" width="200" height="400">
+
+- 계좌 개설
+
+  <img src="./README/layout/account_create_1.PNG" width="200" height="400">
+  <img src="./README/layout/agree.PNG" width="200" height="400">
+  <img src="./README/layout/password.PNG" width="200" height="400">
+  <img src="./README/layout/password_fail.PNG" width="200" height="400">
+  <img src="./README/layout/confirm.PNG" width="200" height="400">
+  <img src="./README/layout/preference.PNG" width="200" height="400">
+  <img src="./README/layout/card_recommend.PNG" width="200" height="400">
+  <img src="./README/layout/card-recommend.gif" width="200" height="400">
+
+- 거래내역
+
+  <img src="./README/layout/remit_history.PNG" width="200" height="400">
+
+- 송금
+
+  <img src="./README/layout/remit1.PNG" width="200" height="400">
+  <img src="./README/layout/remit2.PNG" width="200" height="400">
+  <img src="./README/layout/remit3.PNG" width="200" height="400">
+  <img src="./README/layout/remit4.PNG" width="200" height="400">
+  <img src="./README/layout/remit5.PNG" width="200" height="400">
+  <img src="./README/layout/remit_fail.PNG" width="200" height="400">
+
+- 모임　메인
+
+  <img src="./README/layout/group_main.PNG" width="200" height="400">
+
+- 모임 상세
+
+  <img src="./README/layout/group_detail.PNG" width="200" height="400">
+  <img src="./README/layout/group_detail1.PNG" width="200" height="400">
+  <img src="./README/layout/group_detail2.PNG" width="200" height="400">
+
+- 예산
+
+  <img src="./README/layout/group_asset.PNG" width="200" height="400">
+  <img src="./README/layout/group_asset_add.PNG" width="200" height="400">
+  <img src="./README/layout/group_asset_add1.PNG" width="200" height="400">
+
+  - 피드
+
+  <img src="./README/layout/group_myfeed.PNG" width="200" height="400">
+  <img src="./README/layout/group_feed_add.PNG" width="200" height="400">
+  <img src="./README/layout/group_feed_add1.PNG" width="200" height="400">
+
+- 모임 인원(관리자)
+
+  <img src="./README/layout/group_member.PNG" width="200" height="400">
+
+- 공지사항
+
+  <img src="./README/layout/group_notice.PNG" width="200" height="400">
+  <img src="./README/layout/group_notice_add.PNG" width="200" height="400">
+  <img src="./README/layout/group_notice_add1.PNG" width="200" height="400">
+
+<br>
+
+<a name="roles"></a>
+
+## 🙋‍♂️ Distributed Roles
+
+### BACKEND
+
+#### 이효리 (팀장)
+
+#### 명소이
+
+#### 곽민우
+
+#### 손준성
+
+### FRONTEND
+
+#### 엄세현
+
+- 프론트엔드 리더
+- 초기 개발 환경 구축
+- 로그인, 회원가입 페이지 제작
+- 뱅킹 담당
+  - 페이지 디자인
+  - 페이지 제작
+    - 뱅킹 메인 페이지
+    - 계좌 개설
+    - 계좌 내역
+    - 계좌 송금
+    - 사용자 성향 조사
+    - 카드 추천
+  - 컴포넌트 제작
+  - 뱅킹 Axios
+- Axios 전역화
+- 비 로그인 라우팅 기능
+
+#### 김성수
+
+- 프론트엔드 멤버
+- 모임 담당
+
+<br>
+
+<br>
+
+<a name="function"></a>
+
+## ⚙️ Function
+
+### 회원
+
+💡 회원은 Pinia를 통한 스토어 관리로 구현
+
+- [x] 휴대폰 인증을 통한 회원가입
+- [x] 휴대폰 번호 중복 검사
+- [x] 로그인
+- [x] 로그아웃
+- [x] 비밀번호 찾기
+
+### 뱅킹
+
+💡 계좌 개설부터 송금이 가능한 뱅킹 어플 구현
+
+- [x] 메인 페이지
+- [x] 전체계좌
+- [x] 전체모임
+- [x] 계좌개설
+- [x] 프로필
+- [x] 거래내역
+- [x] 송금
+- [x] 사용자 성향 파악 설문
+- [x] 카드추천
+
+### 모임
+
+💡 피드, 리포트를 통한 소통 개선 및 손쉬운 납부 확인이 가능한 모임 통장 기능 구현
+
+- [x] 메인 페이지
+- [x] 모임 상세
+- [x] 예산 관리
+- [x] 입금 현황
+- [x] 전체 인원 확인
+- [x] 공지사항 작성/수정/삭제
+- [x] 피드 작성/수정/삭제
+- [x] 관리자 권한
+- [x] 초대코드 모임 초대
+- [x] 리포트
+- [ ] 피드 댓글
+
+<br>
