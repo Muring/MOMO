@@ -3,7 +3,7 @@ import { defineStore } from "pinia";
 
 export const useGroupStore = defineStore("group", {
   state: () => ({
-    link: "https://j10a505.p.ssafy.io/",
+    link: "URL주소", // 도메인 주소
     groupHeaderName: "",
     accountNumber: "",
     groupId: undefined,
